@@ -12,3 +12,32 @@ $(document).ready(function() {
     });
 
 });
+function q1(a1) {
+    if(a1  === "Winter") {
+        return 2
+    }
+     if(a1 === "Spring") {
+        return 4
+    }
+     if(a1 === "Fall") {
+        return 3
+    }
+     if(a1 === "Summer") {
+        return 2
+    }
+}
+
+function q2(a2) {
+    if(a2  === "Winter") {
+        return 2
+    }
+     if(a2 === "Spring") {
+        return 4
+    }
+     if(a2 === "Fall") {
+        return 3
+    }
+     if(a2 === "Summer") {
+        return 2
+    }
+}
