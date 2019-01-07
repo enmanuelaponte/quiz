@@ -1,31 +1,32 @@
 /* global $ */
-
 $(document).ready(function() {
     $("button").click(function() {
-        var name = $("#name").val();
         var techPlacement = "TBD";
+        var name = $("#name").val();
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
         var q1Result = $("#question1").val();
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
         var q4Result = $("#question4").val();
         var totalScore = q1(q1Result) + q2(q2Result) + q3(q3Result) + q4(q4Result);
-        placement(totalScore);
+        result(totalScore, name);
     });
 
 });
-function placement(total){
+function result (total,name){
+
     if(total === 10){
-        $(".result").html("congratulatations you live in New York");
+        $(".result").html("Congratulatations," + name + " you live in Oklahoma");
     }
-     if(total > 8){
-        $(".result").html("congratulatations you live in New York");
+    else if(total >= 8){
+        $(".result").html("Congratulatations," + name + " you live in Wyoming");
     }
-     if(total < 5){
-        $(".result").html("congratulatations you live in New York");
+    else if(total <= 5){
+        $(".result").html("Congratulatations," + name + " you live in Florida");
         
-    } if(total < 9){
-        $(".result").html("congratulatations you live in New York");
+    }
+    else if(total >= 15){
+        $(".result").html("Congratulatations," + name + " you live in Texas");
     }
 }
 
