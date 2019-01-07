@@ -14,19 +14,21 @@ $(document).ready(function() {
 
 });
 function result (total,name){
-
     if(total === 10){
-        $(".result").html("Congratulatations," + name + " you live in Oklahoma");
+        $(".result").html("Congratulatations, " + name + " you live in Oklahoma");
     }
-    else if(total >= 8){
-        $(".result").html("Congratulatations," + name + " you live in Wyoming");
+    else if(total >= 10){
+        $(".result").html("Congratulatations, " + name + " you live in Wyoming");
     }
-    else if(total <= 5){
-        $(".result").html("Congratulatations," + name + " you live in Florida");
+    else if(total >= 7){
+        $(".result").html("Congratulatations, " + name + " you live in Florida");
         
     }
-    else if(total >= 15){
-        $(".result").html("Congratulatations," + name + " you live in Texas");
+    else if(total >= 3){
+        $(".result").html("Congratulatations, " + name + " you live in Texas");
+    }
+    else{
+         $(".result").html("Score is too Low Try again")
     }
 }
 
